@@ -1,0 +1,30 @@
+public class Practica1 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        
+        int  N;
+        double A;
+        char C;
+        int x;
+        int y;
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.print("Digite el valor de N" +"\n" );
+        N=Integer.parseInt(teclado.nextLine());              
+        System.out.print("Digite el valor de A" +"\n");
+        A=Double.parseDouble(teclado.nextLine());
+        C=
+        
+        
+        
+        System.out.print("El valor de N es" +N);
+        System.out.print("El valor de A es" + A);
+        System.out.print("El valor de A es" + C);
+        x=N+A;
+        System.out.println("La suma de N+A es"+x);
+        y=A-N;
+        System.out.println("La diferencia de A-B es"+y);
+        
