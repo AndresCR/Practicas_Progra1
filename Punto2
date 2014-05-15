@@ -1,0 +1,33 @@
+public class Punto_2 {
+
+    /**
+     * @param args the command line arguments
+     */
+    public static void main(String[] args) {
+        int X;
+        int Y;
+        double N;
+        double M;
+        double result;
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Digite el valor de X");
+        X=Integer.parseInt(teclado.nextLine());
+        System.out.print("Digite el valor de Y");
+        Y=Integer.parseInt(teclado.nextLine());
+        System.out.print("Digite el valor de N");
+        N=Double.parseDouble(teclado.nextLine());
+        System.out.print("Digite el valor de M");
+        M=Double.parseDouble(teclado.nextLine());
+        
+        result = M*X;
+        System.out.println("El resultado de la multiplicacion de M y B es =" + result);
+        result= N/Y;
+        System.out.print("El resultado de la divicion de N y Y es" + result);
+        result = M+N;
+        System.out.println("El resultado suma de M y N es" + result);
+        result= N-X;
+        System.out.print("El resultado de la diferencia de N y X es" + result);
+             
+        // TODO code application logic here
+    }
