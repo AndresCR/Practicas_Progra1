@@ -9,22 +9,25 @@ public class Practica1 {
         char CharacterValue = 'C';
         int x;
         int y;
-        Scanner teclado = new Scanner(System.in);
+        Scanner teclado = new Scanner(System.in);//captura en pantalla los valores dgitados por el usuario en el teclado
         
-        System.out.print("Digite el valor de N" +"\n" );
-        N=Integer.parseInt(teclado.nextLine());              
-        System.out.print("Digite el valor de A" +"\n");
-        A=Double.parseDouble(teclado.nextLine());
-        System.out.println("Digite el valor de C" +"\n"); 
-        int asciiValue=(int)CharacterValue;
-        System.out.println("asciiValue");
+        System.out.print("Digite el valor de N" +"\n" );//despliega en pantalla un cuadro de dialogo al usuario para que digite el valor que se le solicita para n
+        N=Integer.parseInt(teclado.nextLine());//captura el valor de la variable N              
+        System.out.print("Digite el valor de A" +"\n");//despliega en pantalla un cuadro de dialogo al usuario para que ingrese el valor de la variable A
+        A=Double.parseDouble(teclado.nextLine());//captura el valor de la variable A
+        System.out.println("Digite el valor de C" +"\n");//Despliega en pantalla un cuadro de dialogo al usuario para que digite el valor de la variable C 
+        java.util.Scanner in = new java.util.Scanner(System.in);
+        char aux = in.next().charAt(0);
+        System.out.println("El caracter leido es: " + aux
+        + "\n Su valor Ascii Decimal es:" + (int) aux
+        + "\n Su valor Ascii Hexadecimal es:" + Integer.toHexString((int) aux)
+        + "\n Su valor Ascii Octal es:"+Integer.toOctalString((int)aux));
                 
         System.out.print("El valor de N es" + N);
         System.out.print("El valor de A es" + A);
-        System.out.print("El valor de C es" + C);
         
-        x=N+A;
+        x=(int) (N+A);
         System.out.println("La suma de N+A es"+ x);
         
-        y=A-N;
+        y=(int) (A-N);
         System.out.println("La diferencia de A-B es"+ y);
