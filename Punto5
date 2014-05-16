@@ -1,0 +1,16 @@
+public static void main(String[] args) {
+        int A;
+        
+        Scanner teclado=new Scanner(System.in);
+        
+        System.out.println("Digite un valor para A"+"\n");
+        A=Integer.parseInt(teclado.nextLine());
+        if (A%2==0)
+        {
+            System.out.println("El valor digitado es un número par"+"\n");
+        }
+        else
+        {
+            System.out.println("El valor digitado es impar"+"\n");    
+        }
+    
