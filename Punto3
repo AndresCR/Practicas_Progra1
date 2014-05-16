@@ -1,0 +1,10 @@
+public static void main(String[] args) {
+        int N;
+        int result;
+        
+        Scanner tecldo = new Scanner(System.in);
+        
+        System.out.print("Digite el valor para N"+"\n");
+        N=Integer.parseInt(tecldo.nextLine());
+        result=((N+77)-3)*2;
+        System.out.println("Ela resultado de incrementar en 77, decrementar en 3 y de duplicar el valor N es:"+"\n"+ result +"\n");
