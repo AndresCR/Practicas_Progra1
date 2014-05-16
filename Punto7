@@ -1,0 +1,47 @@
+ public static void main(String[] args) {
+        int C;
+        int result=0;
+        
+        Scanner teclado = new Scanner(System.in);
+        
+        System.out.println("Digite un valor para B"+"\n");
+        C=Integer.parseInt(teclado.nextLine());
+        if (C>0)
+        {
+            System.out.println("El numero digitado es positivo"+"\n");
+        }
+        else{
+        
+            System.out.println("El numero digita en negativo"+"\n");
+        }
+        if (C%2==0)
+        {
+            System.out.println("El valor digitado es un número par"+"\n");
+        }
+        else
+        {
+            System.out.println("El valor digitado es impar"+"\n");    
+        }
+        if (result==0)
+        {
+            result=C%5;
+            System.out.println("El numero digita es multiplo de 5"+"\n");
+        }
+        else{
+            System.out.println("El numero digitado no es multiplo de 5"+"\n");
+        }
+        if (result==0)
+        {
+            result=C%10;
+            System.out.println("El numero digita es multiplo de 10"+"\n");
+        }
+        else{
+            System.out.println("El numero digitado no es multiplo de 10"+"\n");
+        }
+        if (C>100)
+        {
+            System.out.println("El numer digita es mayor que 100"+"\n");
+        }
+        else{
+                System.out.println("El numero digita es menor a 100"+"\n");    
+        }
