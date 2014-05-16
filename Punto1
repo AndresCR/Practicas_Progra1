@@ -6,7 +6,7 @@ public class Practica1 {
     public static void main(String[] args) {
         int  N;
         double A;
-        char CharacterValue = 'C';
+        char CharacterValue;
         int x;
         int y;
         Scanner teclado = new Scanner(System.in);//captura en pantalla los valores dgitados por el usuario en el teclado
@@ -22,12 +22,18 @@ public class Practica1 {
         + "\n Su valor Ascii Decimal es:" + (int) aux
         + "\n Su valor Ascii Hexadecimal es:" + Integer.toHexString((int) aux)
         + "\n Su valor Ascii Octal es:"+Integer.toOctalString((int)aux));
-                
-        System.out.print("El valor de N es" + N);
-        System.out.print("El valor de A es" + A);
+        
+        
+        System.out.print("El valor de N es:" + N+"\n");
+        System.out.print("El valor de A es:" + A+"\n");
         
         x=(int) (N+A);
-        System.out.println("La suma de N+A es"+ x);
+        System.out.println("La suma de N+A es:"+ x+"\n");
         
         y=(int) (A-N);
-        System.out.println("La diferencia de A-B es"+ y);
+        System.out.println("La diferencia de A-B es:"+ y+"\n");
+
+        // TODO code application logic here
+    }
+    
+}
