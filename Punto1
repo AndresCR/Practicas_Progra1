@@ -4,18 +4,18 @@ public class Practica1 {
      * @param args the command line arguments
      */
     public static void main(String[] args) {
-        int  N;
-        double A;
+        int  N=0;
+        double A=0;
         char CharacterValue;
-        int x;
-        int y;
+        int result;
         Scanner teclado = new Scanner(System.in);//captura en pantalla los valores dgitados por el usuario en el teclado
-        
+                                       
         System.out.print("Digite el valor de N" +"\n" );//despliega en pantalla un cuadro de dialogo al usuario para que digite el valor que se le solicita para n
         N=Integer.parseInt(teclado.nextLine());//captura el valor de la variable N              
         System.out.print("Digite el valor de A" +"\n");//despliega en pantalla un cuadro de dialogo al usuario para que ingrese el valor de la variable A
         A=Double.parseDouble(teclado.nextLine());//captura el valor de la variable A
         System.out.println("Digite el valor de C" +"\n");//Despliega en pantalla un cuadro de dialogo al usuario para que digite el valor de la variable C 
+       
         java.util.Scanner in = new java.util.Scanner(System.in);
         char aux = in.next().charAt(0);
         System.out.println("El caracter leido es: " + aux
@@ -27,13 +27,11 @@ public class Practica1 {
         System.out.print("El valor de N es:" + N+"\n");
         System.out.print("El valor de A es:" + A+"\n");
         
-        x=(int) (N+A);
-        System.out.println("La suma de N+A es:"+ x+"\n");
+        result=(int) (N+A);
+        System.out.println("La suma de N+A es:"+result+"\n");
         
-        y=(int) (A-N);
-        System.out.println("La diferencia de A-B es:"+ y+"\n");
-
-        // TODO code application logic here
+        result=(int) (A-N);
+        System.out.println("La diferencia de A-B es:"+result+"\n");
     }
-    
-}
+        // TODO code application logic here
+}   
